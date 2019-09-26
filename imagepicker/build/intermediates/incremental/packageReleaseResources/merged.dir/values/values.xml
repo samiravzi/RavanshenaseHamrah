@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="ef_black_alpha_50">#80000000</color>
+    <color name="ef_black_alpha_aa">#AA000000</color>
+    <color name="ef_colorAccent" ns1:override="true">#ff3376</color>
+    <color name="ef_colorPrimary" ns1:override="true">#ff3376</color>
+    <color name="ef_colorPrimaryDark" ns1:override="true">#ff3376</color>
+    <color name="ef_colorTextPrimary" ns1:override="true">#FFFFFF</color>
+    <color name="ef_grey">#9E9E9E</color>
+    <color name="ef_teal">#009688</color>
+    <color name="ef_white">#FFFFFF</color>
+    <declare-styleable name="ef_ProgressWheel"><attr format="boolean" name="ef_matProg_progressIndeterminate"/><attr format="color" name="ef_matProg_barColor"/><attr format="color" name="ef_matProg_rimColor"/><attr format="dimension" name="ef_matProg_rimWidth"/><attr format="float" name="ef_matProg_spinSpeed"/><attr format="integer" name="ef_matProg_barSpinCycleTime"/><attr format="dimension" name="ef_matProg_circleRadius"/><attr format="boolean" name="ef_matProg_fillRadius"/><attr format="dimension" name="ef_matProg_barWidth"/><attr format="boolean" name="ef_matProg_linearProgress"/></declare-styleable>
+    <dimen name="ef_font_medium">16sp</dimen>
+    <dimen name="ef_font_small">12sp</dimen>
+    <dimen name="ef_item_padding">1dp</dimen>
+    <dimen name="ef_margin_large">15dp</dimen>
+    <dimen name="ef_margin_medium">10dp</dimen>
+    <dimen name="ef_margin_small">5dp</dimen>
+    <dimen name="ef_padding_medium">10dp</dimen>
+    <dimen name="ef_padding_small">5dp</dimen>
+    <dimen name="ef_spacing_double">16dp</dimen>
+    <string name="ef_camera">CAMERA</string>
+    <string name="ef_done">DONE</string>
+    <string name="ef_error_create_image_file">Failed to create image file</string>
+    <string name="ef_error_no_camera">No camera found</string>
+    <string name="ef_error_null_cursor">Oops, something went wrong!</string>
+    <string name="ef_image_directory" translatable="false">Camera</string>
+    <string name="ef_ltitle_permission_denied">Permission denied</string>
+    <string name="ef_msg_empty_images">No images found</string>
+    <string name="ef_msg_limit_images">Image selection limit</string>
+    <string name="ef_msg_no_camera_permission">Please grant camera permission to capture image</string>
+    <string name="ef_msg_no_write_external_permission">Please grant storage permission to select images</string>
+    <string name="ef_ok">OK</string>
+    <string name="ef_permission_write_external_rationale">Allow access external storage to select images</string>
+    <string name="ef_selected">%d selected</string>
+    <string name="ef_selected_with_limit">%1$d/%2$d selected</string>
+    <string name="ef_title_folder">Folder</string>
+    <string name="ef_title_select_image">Tap to select images</string>
+    <style name="ef_AppTheme" parent="ef_BaseTheme">
+        <item name="colorPrimary">@color/ef_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/ef_colorPrimaryDark</item>
+        <item name="colorAccent">@color/ef_colorAccent</item>
+    </style>
+    <style name="ef_BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ef_CustomToolbarTheme" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/ef_colorTextPrimary</item>
+        <item name="actionMenuTextColor">@color/ef_colorTextPrimary</item>
+    </style>
+</resources>

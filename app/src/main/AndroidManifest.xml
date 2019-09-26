@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hope.commonsense">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--
+        <permission
+        android:name="com.example.user.newbackgrounds.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.user.newbackgroundspermission.C2D_MESSAGE" />
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.QuestionListActivity" />
+        <activity android:name=".Activities.QuestionActivity" />
+        <activity android:name=".Activities.ArticleActivity" />
+        <activity android:name=".Activities.VideoActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".Activities.ArticleListActivity" />
+        <activity android:name=".Activities.VideoListActivity" />
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:noHistory="true" />
+        <activity android:name=".Activities.SearchActivity" />
+        <activity android:name=".Activities.ProfileActivity" />
+        <activity android:name=".Activities.CategoryActivity" />
+        <activity android:name=".Activities.TagActivity" />
+        <activity android:name=".Activities.CommentActivity"></activity>
+    </application>
+
+</manifest>

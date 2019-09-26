@@ -1,0 +1,20 @@
+{
+  "ResultCode": 1,   // successful:1 , error:0
+  "ResultMessage": "",  //
+  "Body": {
+    "Id": 1,
+    "Title": "نکاتی در مورد مشاهده کردن تلوزیون",
+    "Image": "http://videopool.ir/uploads/images/main/20161031/kpvn0up510rc2vp9a9jk.jpg",
+    "Link": "http://storage.qmery.com/hls/1HhyRbjkJ5BtpMWeRJzsqQlzrp6z8OoZ1GrBT6Nxs46Lo2pgHzx2ZSXcxAgbRtar4dXdFQlL0boArZOSJ1eWgA/master.qm3u8",
+    "CategoryId": 2,
+    "Time": "3",
+    "MinAge": 4,
+    "MaxAge": 12,
+    "Field": "",
+    "Salary": "",
+    "LikeCount": 20,
+    "ViewCount": 30,
+    "Date":"2017-05-18'T'11:25:25",
+    "Tags": [ {"id": 2, "Title":"نیرومندی های شخصیت و مهارت های زندگی"} ]
+  }
+}

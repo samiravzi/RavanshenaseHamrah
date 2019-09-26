@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/navigation_user_image"
+            android:layout_height="@dimen/navigation_user_image"
+            android:src="@drawable/noprofile"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="40dp"
+            app:border_width="0dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <com.hope.commonsense.Views.TextViewWithFont
+            android:id="@+id/nav_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_main_Lists_title_size2"
+            android:layout_marginBottom="10dp"/>
+
+        <com.hope.commonsense.Views.TextViewWithFont
+            android:id="@+id/nav_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_main_Lists_title_size2"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

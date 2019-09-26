@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_main_slider_height">210dp</dimen>
+    <dimen name="activity_main_Lists_height">180dp</dimen>
+    <dimen name="activity_main_videos_List_height">150dp</dimen>
+    <dimen name="activity_main_Lists_card_height">176dp</dimen>
+    <dimen name="activity_main_Lists_article_weight">220dp</dimen>
+    <dimen name="activity_main_Lists_question_weight">160dp</dimen>
+    <dimen name="activity_main_Lists_title_size">20sp</dimen>
+    <dimen name="activity_main_Lists_title_size2">16sp</dimen>
+    <dimen name="activity_main_Lists_title_size3">14sp</dimen>
+
+    <dimen name="activity_question_spinner_height">50dp</dimen>
+    <dimen name="activity_question_spinner_title">17sp</dimen>
+    <dimen name="activity_question_title">24sp</dimen>
+    <dimen name="activity_question_answer">16sp</dimen>
+    <dimen name="activity_question_titles">18sp</dimen>
+    <dimen name="activity_question_panel_icon_size">25dp</dimen>
+
+    <dimen name="activity_video_videoview_height">250dp</dimen>
+
+    <dimen name="activity_main_navigation_icon_size">25dp</dimen>
+    <dimen name="navigation_user_image">100dp</dimen>
+    <dimen name="rang_border_radius">20dp</dimen>
+    <dimen name="search_box_radius">10dp</dimen>
+    <dimen name="edittext_border_radius">10dp</dimen>
+    <dimen name="snak_bar_height">50dp</dimen>
+
+
+
+    <dimen name="list_row_comment_title">16sp</dimen>
+    <dimen name="list_row_comment_date">14sp</dimen>
+    <dimen name="list_row_comment_text">14sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_signup_btn_width">250dp</dimen>
+    <dimen name="activity_signup_btn_height">50dp</dimen>
+
+
+    <dimen name="activity_search_progressbar_size">30dp</dimen>
+
+    <dimen name="activity_profile_image_size">100dp</dimen>
+    <dimen name="activity_profile_text_size">20dp</dimen>
+
+    <dimen name="activity_categories_title_size">20sp</dimen>
+    <dimen name="activity_categories_tag_size">16sp</dimen>
+
+    <dimen name="app_bar_title_size">20sp</dimen>
+    <dimen name="splash_loading_size">100dp</dimen>
+
+
+</resources>

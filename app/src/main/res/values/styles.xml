@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="TextViewStyle">
+        <item name="android:singleLine">false</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+
+    <style name="NavigationViewTheme" >
+        <item name="android:listDivider">@color/navigation_divider</item>
+        <item name="android:textSize">@dimen/activity_main_Lists_title_size2</item>
+    </style>
+
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textColor">@color/dark_gray2</item>
+    </style>
+
+
+
+    <style name="TextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorHint">@color/dark_gray2</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/dark_gray2</item>
+        <item name="colorControlActivated">@color/dark_gray1</item>
+        <item name="android:textColorHighlight">@color/dark_gray2</item>
+        <item name="android:textColorLink">@color/dark_gray2</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/main_back">
+
+            <include layout="@layout/app_bar_main"/>
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:focusableInTouchMode="true">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_main_slider_height"
+                        android:scaleType="centerCrop"/>
+
+                    <ir.noghteh.JustifiedTextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:paddingLeft="3dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:tag="title"
+                        android:visibility="visible"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <WebView
+                            android:id="@+id/answer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:paddingLeft="3dp"
+                            android:textColor="@color/black"
+                            android:tag="answer"
+                            android:visibility="gone"/>
+
+                        <io.github.yuweiguocn.lib.squareloading.SquareLoading
+                            android:id="@+id/content_loading"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/activity_main_slider_height"
+                            android:layout_centerInParent="true"
+                            app:squareColor="@color/colorPrimary"
+                            app:squareSize="10dp"
+                            app:squareCorner="2dp"
+                            app:dividerSize="2dp"
+                            app:xCount="3"
+                            app:yCount="3" />
+
+                    </RelativeLayout>
+
+                    <com.hope.commonsense.Views.TextViewWithFont
+                        android:id="@+id/txt_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_gray2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="@dimen/activity_main_Lists_title_size2"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_gray2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/share_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <com.hope.commonsense.Views.TextViewWithFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/dark_gray2"
+                                android:text="@string/share"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/activity_question_panel_icon_size"
+                                android:layout_height="@dimen/activity_question_panel_icon_size"
+                                android:src="@drawable/btn_share"
+                                android:layout_margin="4dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/commentLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_vertical">
+
+                            <com.hope.commonsense.Views.TextViewWithFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/dark_gray2"
+                                android:text="@string/comment"/>
+
+                            <ImageView
+                                android:layout_width="@dimen/activity_question_panel_icon_size"
+                                android:layout_height="@dimen/activity_question_panel_icon_size"
+                                android:src="@drawable/btn_cm"
+                                android:layout_margin="4dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/likeLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical">
+
+                            <com.hope.commonsense.Views.TextViewWithFont
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/dark_gray2"
+                                android:text="@string/like"/>
+
+                            <ImageView
+                                android:id="@+id/btn_like"
+                                android:layout_width="@dimen/activity_question_panel_icon_size"
+                                android:layout_height="@dimen/activity_question_panel_icon_size"
+                                android:layout_margin="4dp"/>
+
+                            <ProgressBar
+                                android:id="@+id/progressbar_like"
+                                android:layout_width="@dimen/activity_question_panel_icon_size"
+                                android:layout_height="@dimen/activity_question_panel_icon_size"
+                                android:layout_margin="4dp"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_gray2"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/tags_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp"></LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dark_gray2"/>
+
+                    <include layout="@layout/related_lists" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        app:itemTextColor="@color/dark_gray2"
+        android:theme="@style/NavigationViewTheme"
+        app:itemTextAppearance="@style/NavigationDrawerStyle"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        android:background="@android:color/white"
+        app:itemIconTint="@color/navigation_icon">
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="left"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.hope.commonsense.Views.TextViewWithFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/dark_gray2"
+                android:textSize="@dimen/activity_main_Lists_title_size2"/>
+
+            <ImageView
+                android:layout_width="@dimen/activity_main_navigation_icon_size"
+                android:layout_height="@dimen/activity_main_navigation_icon_size"
+                android:layout_gravity="center_vertical|left"
+                android:src="@drawable/ico_nav_logout"
+                android:layout_marginRight="5dp"/>
+
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

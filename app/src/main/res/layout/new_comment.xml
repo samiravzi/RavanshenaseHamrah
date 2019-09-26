@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+
+            <com.hope.commonsense.Views.TextViewWithFont
+                android:id="@+id/btn_send_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/activity_question_titles"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar_send_comment"
+                android:layout_width="@dimen/activity_question_panel_icon_size"
+                android:layout_height="@dimen/activity_question_panel_icon_size"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/input_comment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textColorHint="@color/dark_gray2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/hint_new_comment"
+            android:visibility="visible"
+            android:textSize="@dimen/activity_question_titles"
+            android:layout_gravity="center_vertical"
+            android:gravity="right|center_vertical"
+            android:background="@android:color/transparent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

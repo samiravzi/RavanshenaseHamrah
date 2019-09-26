@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/main_back">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/app_bar_main"/>
+
+                <LinearLayout
+                    android:id="@+id/spinner_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_question_spinner_height"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary">
+
+                        <ImageView
+                            android:id="@+id/spinnerArrow"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginRight="13dp"
+                            android:src="@drawable/btn_arrow" />
+
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overlapAnchor="false"
+                        android:background="@drawable/spinner_border"/>
+
+                </LinearLayout>
+
+                <com.hope.commonsense.Views.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/age_filter_title"
+                    android:textSize="@dimen/activity_question_titles"
+                    android:textColor="@color/black"
+                    android:visibility="gone"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/age_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/activity_question_spinner_height"
+                    android:layout_gravity="right"
+                    android:visibility="gone"/>
+
+                <com.hope.commonsense.Views.TextViewWithFont
+                    android:id="@+id/age_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/activity_question_title"
+                    android:text=""
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="right"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:gravity="center_vertical"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp">
+                <TextView
+                    android:id="@+id/collapse_toolbar_title"
+                    android:textSize="@dimen/app_bar_title_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:visibility="invisible"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/white"/>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible"/>
+
+        <io.github.yuweiguocn.lib.squareloading.SquareLoading
+            android:id="@+id/loading"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:squareColor="@color/colorPrimary"
+            app:squareSize="10dp"
+            app:squareCorner="2dp"
+            app:dividerSize="2dp"
+            app:xCount="3"
+            app:yCount="3"
+            android:visibility="gone"/>
+
+        <com.hope.commonsense.Views.TextViewWithFont
+            android:id="@+id/no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray2"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:text="@string/no_search_result"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

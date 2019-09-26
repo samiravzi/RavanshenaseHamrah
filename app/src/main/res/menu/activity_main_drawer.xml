@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layoutDirection="rtl">
+
+    <group
+        android:id="@+id/gp1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/articles"
+            android:title="@string/articles"
+            android:icon="@drawable/ico_nav_articles"/>
+
+        <item
+            android:id="@+id/questions"
+            android:title="@string/questions"
+            android:icon="@drawable/ico_nav_qa"/>
+
+        <item
+            android:id="@+id/videos"
+            android:title="@string/videos"
+            android:icon="@drawable/ico_nav_video"/>
+
+        <item
+            android:id="@+id/categories"
+            android:title="@string/categories"
+            android:icon="@drawable/ico_nav_cats"/>
+
+    </group>
+
+    <group
+        android:id="@+id/gp2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profile"
+            android:title="@string/myProfile"
+            android:icon="@drawable/ico_nav_profile"/>
+
+        <item
+            android:id="@+id/applist"
+            android:title="@string/applist"
+            android:icon="@drawable/ico_nav_applist"/>
+
+        <item
+            android:id="@+id/videolist"
+            android:title="@string/videolist"
+            android:icon="@drawable/ico_nav_applist"/>
+
+        <item
+            android:id="@+id/footer_spacer_1"
+            android:checkable="false"
+            android:enabled="false"
+            android:orderInCategory="200"
+            android:title="" />
+
+
+    </group>
+<!--    <item android:title="@string/subjects">
+        <menu>
+            <group
+                android:id="@+id/gp2"
+                android:checkableBehavior="single">
+            </group>
+        </menu>
+    </item>-->
+
+
+
+</menu>

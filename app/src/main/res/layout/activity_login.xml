@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hope.commonsense.Activities.RegisterActivity"
+    android:background="@color/main_back"
+    android:id="@+id/parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/app_bar_register"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_main_slider_height"
+                android:src="@drawable/register_image"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/form_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp">
+
+                        <EditText
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/bg_edittext"
+                            android:hint="@string/hint_phone_number_sample"
+                            android:padding="15dp"
+                            android:inputType="number"
+                            android:maxLength="11"/>
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/bg_edittext"
+                            android:hint="@string/hint_password_des"
+                            android:padding="15dp"
+                            android:inputType="textPassword"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!._-@#$%^"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="@dimen/activity_signup_btn_width"
+                        android:layout_height="@dimen/activity_signup_btn_height"
+                        android:background="@drawable/bg_register_btn"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/activity_main_Lists_title_size"
+                        android:text="@string/login"/>
+
+                    <com.hope.commonsense.Views.TextViewWithFont
+                        android:id="@+id/not_registered_before"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_main_Lists_title_size2"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/not_registered"
+                        android:layout_marginTop="40dp"/>
+
+                    <com.hope.commonsense.Views.TextViewWithFont
+                        android:id="@+id/forgot_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_main_Lists_title_size2"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/forgot_pass"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="40dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/loading_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/loading_bg"
+                    android:visibility="gone"
+                    android:focusable="true"
+                    android:clickable="true">
+
+                    <com.github.glomadrian.loadingballs.BallView
+                        android:layout_margin="30dp"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        lib:balls="6"
+                        lib:movement_cycle_time="3000"
+                        lib:enable_size_animation="true"
+                        lib:size_cycle_time="800"
+                        lib:min_ball_size="5dp"
+                        lib:max_ball_size="12dp"
+                        lib:ball_colors="@array/colors"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+

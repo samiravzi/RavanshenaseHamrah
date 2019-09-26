@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hope.commonsense.Activities.SplashActivity"
+    android:id="@+id/layout">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"/>
+
+    <LinearLayout
+        android:id="@+id/progressbar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/progressbar"
+            android:layout_width="@dimen/splash_loading_size"
+            android:layout_height="@dimen/splash_loading_size"
+            android:scaleType="fitCenter"
+            android:src="@drawable/loading"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.hope.commonsense.Views.TextViewWithFont
+            android:id="@+id/waitingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wait"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

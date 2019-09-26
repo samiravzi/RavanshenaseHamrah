@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:id="@+id/rel_actionBar">
+
+    <Button
+        android:id="@+id/btn_navigation"
+        android:layout_width="@dimen/activity_main_navigation_icon_size"
+        android:layout_height="@dimen/activity_main_navigation_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/btn_menu"/>
+
+    <com.hope.commonsense.Views.TextViewWithFont
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/app_bar_title_size"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/btn_navigation"
+        android:layout_toRightOf="@+id/btn_search"
+        android:ellipsize="end"/>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="@dimen/activity_main_navigation_icon_size"
+        android:layout_height="@dimen/activity_main_navigation_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/btn_saerch"/>
+
+</RelativeLayout>

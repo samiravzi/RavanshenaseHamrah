@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">روانشناس همراه</string>
+    <string name="webservice_categories">2</string>
+    <string name="showvideolist">0</string>
+    <string name="myProfile">پروفایل من</string>
+    <string name="videolist">سایر ویدیوها</string>
+    <string name="applist">سایر برنامه ها</string>
+
+    <string name="activities_title">اپ والدین</string>
+    <string name="articles">مقاله ها</string>
+    <string name="related_articles">مقاله های مرتبط</string>
+    <string name="popular_questions">سوالات متداول</string>
+    <string name="related_question">سوالات مرتبط</string>
+    <string name="videos">ویدئوهای آموزشی</string>
+    <string name="related_videos">ویدئوهای مرتبط</string>
+    <string name="questions">پرسش و پاسخ</string>
+    <string name="categories">موضوعات</string>
+    <string name="settings">تنظیمات</string>
+    <string name="logout">خروج از اکانت</string>
+    <string name="all">همه</string>
+    <string name="video">ویدئوها</string>
+
+    <string name="more">بیشتر</string>
+    <string name="comment">نظر</string>
+    <string name="comments">نظرات</string>
+    <string name="see_answer">مشاهده پاسخ</string>
+    <string name="age_filter_title">فیلتر بر اساس سن فرزندان</string>
+    <string name="prompt_category">انتخاب دسته بندی</string>
+    <string name="register">ثبت نام</string>
+    <string name="login">ورود</string>
+    <string name="like">لایک</string>
+    <string name="view">بازدید</string>
+    <string name="share">اشتراک</string>
+    <string name="profile">حساب کاربری</string>
+
+    <string name="hint_phone_number_sample">شماره موبایل: 09120000000</string>
+    <string name="hint_phone_number">شماره موبایل</string>
+    <string name="nickname">نام کاربری در برنامه</string>
+    <string name="hint_password_des">کلمه عبور: کیبورد را به حالت انگلیسی تغییر دهید!</string>
+    <string name="hint_password">کلمه عبور</string>
+    <string name="hint_re_password">تکرار کلمه عبور</string>
+    <string name="registered_before">قبلا ثبت نام کرده اید؟</string>
+    <string name="not_registered">ثبت نام نکرده اید؟</string>
+    <string name="forgot_pass">رمز خود را فراموش کرده ام!</string>
+    <string name="try_again">ورود دوباره</string>
+    <string name="back">بازگشت</string>
+    <string name="save">ثبت</string>
+    <string name="search_box_hint">جستجو</string>
+    <string name="searching">در حال جستجو...</string>
+    <string name="hint_status">درباره من</string>
+    <string name="hint_email">ایمیل</string>
+    <string name="hint_new_comment">نظر خود را بنویسید...</string>
+    <string name="all_categories">همه دسته بندی ها</string>
+    <string name="edit">ویرایش</string>
+
+    <string name="enter_phone_number">شماره موبایل خود را وارد کنید!</string>
+    <string name="passwords_dont_match">کلمه ی عبور و تکرار آن مشابه نیستند!</string>
+    <string name="enter_nickname">یک نام کاربری وارد کنید!</string>
+    <string name="enter_email"> آدرس ایمیل خود را وارد کنید!</string>
+    <string name="invalid_email"> آدرس ایمیل وارد شده معتبر نمی باشد!</string>
+    <string name="enter_text">برای کامنت خود یک متن وارد کنید!</string>
+    <string name="enter_password">رمز عبور خود را وارد کنید!</string>
+    <string name="enter_valid_number">شماره وارد شده معتبر نمی باشد، باید 11 کاراکتر باشد!</string>
+    <string name="no_search_result">هیچ آیتمی یافت نشد.</string>
+    <string name="no_comment">هیچ کامنتی گذاشته نشده است.</string>
+    <string name="discard_changes">تغییرات ثبت نشده است، برای خروج یکبار دیگر دکمه back را بزنید.</string>
+    <string name="wait_txt">لطفا صبر کنید... </string>
+    <string name="get_pass">بازیابی رمز ورود</string>
+    <string name="email_has_been_sent">رمز ورود به ایمیل شما ارسال گردید.</string>
+    <string name="ok">تایید</string>
+    <string name="close">بستن</string>
+    <string name="retry">تلاش مجدد</string>
+    <string name="login_txt">برای ورود <![CDATA[<font color="%1$s">اینجا</font>]]> کلیک کنید.</string>
+    <string name="exit_txt">برای خروج دوباره دکمه back را بزنید.</string>
+    <string name="send">ارسال</string>
+    <string name="wait">لطفا منتظر باشید...</string>
+    <string name="no_connection">عدم دسترسی به اینترنت</string>
+    <string name="no_connection_text">دسترسی به اینترنت مقدور نمی باشد. لطفا بعد از اتصال به اینترنت مجددا تلاش کنید.</string>
+    <string name="switch_english_mode">کیبورد خود را به حالت انگلیسی تغییر دهید.</string>
+    <string name="share_footer1">برای خواندن مطالب بیشتر اپلیکیشن \u0020 </string>
+    <string name="share_footer_video1">برای مشاهده ویدئو اپلیکیشن \u0020</string>
+    <string name="share_footer2"> \u0020را نصب کنید.</string>
+    <string name="error_retry_text">خطادر انجام عملیات، مجددا تلاش کنید!</string>
+    <string name="status_sample">مثال: مادر پوریا 3 ساله</string>
+    <string name="phone_number_hint">شماره موبایل برای بقیه کاربران نمایش داده نمی شود.</string>
+
+
+
+    <string name="html"><![CDATA[<html><head><style type=\"text/css\">@font-face {font-family: MyFont;src: url(\'file:///android_asset/fonts.ttf\')}body {font-family: MyFont;text-align: justify;}</style></head><body>&?</body dir="rtl></html>]]></string>
+
+    <string-array name="age_titles">
+        <item>همه سنین</item>
+        <item>بالای 3 سال</item>
+        <item>1 تا 4 سال</item>
+        <item>5 تا 7 سال</item>
+        <item>7 تا 8 سال</item>
+        <item>8 تا 9 سال</item>
+        <item>10 تا 12 سال</item>
+        <item>بالای 13 سال</item>
+
+    </string-array>
+
+    <integer-array name="age_ids">
+        <item>4</item>
+        <item>8</item>
+        <item>1</item>
+        <item>2</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>3</item>
+    </integer-array>
+    
+    <integer-array name="age_priority">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </integer-array>
+
+</resources>

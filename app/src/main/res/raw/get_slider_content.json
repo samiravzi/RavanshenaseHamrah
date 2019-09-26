@@ -1,0 +1,44 @@
+{
+  "ResultCode": 1,   // successful:1 , error:0
+  "ResultMessage": "",  //
+  "Body": [
+    {
+      "Title": "سایت commonsense",
+      "Image": "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/homepage_main_feature_first/public/homepage-feature/6-summer-reading-challenges-hero-1412x632.jpg?itok=QVgR2uUw",
+      "Link": "https://www.commonsensemedia.org/", // if this is a website
+      "ArticleId": 0, // if this is an article
+      "QuestionId": 0, // if this is a question
+      "VideoId":0 // if this is a video
+    },
+
+    {
+      "Title": "چطور بدون دلخوری و دعوا تلویزیون را خاموش کنم؟",
+      "Image": "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/topic_video_thumbnail_hd_large/public/video-thumbnails/pt-tame-parent-device-use.jpg",
+      "Link": "", // if this is a website
+      "ArticleId": 0, // if this is an article
+      "QuestionId": 1, // if this is a question
+      "VideoId":0 // if this is a video
+    },
+
+    {
+      "Title": "6 مهارتی که کودکان قبل از رفتن به مهدکودک باید بدانند",
+      "Image": "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/topic_intro/public/topics/170308-csm-parentconcerns-banner-912x320-characterstrength.jpg",
+      "Link": "", // if this is a website
+      "ArticleId": 7, // if this is an article
+      "QuestionId": 0, // if this is a question
+      "VideoId":0 // if this is a video
+    },
+
+    {
+      "Title": "نکاتی در مورد مشاهده کردن تلوزیون",
+      "Image": "http://videopool.ir/uploads/images/main/20161031/kpvn0up510rc2vp9a9jk.jpg",
+      "Link": "", // if this is a website
+      "ArticleId": 0, // if this is an article > 0, else 0
+      "QuestionId": 0, // if this is a question
+      "VideoId":1 // if this is a video
+    }
+
+
+
+  ]
+}

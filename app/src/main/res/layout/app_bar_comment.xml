@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/back_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/activity_main_navigation_icon_size"
+            android:layout_height="@dimen/activity_main_navigation_icon_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/btn_back"/>
+
+        <com.hope.commonsense.Views.TextViewWithFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:text="@string/back"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_navigation"
+        android:layout_width="@dimen/activity_main_navigation_icon_size"
+        android:layout_height="@dimen/activity_main_navigation_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/btn_menu"/>
+
+</RelativeLayout>

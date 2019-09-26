@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/article_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical">
+
+            <com.hope.commonsense.Views.TextViewWithFont
+                android:id="@+id/article_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/related_articles"
+                android:textSize="@dimen/activity_main_Lists_title_size"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"/>
+
+            <com.hope.commonsense.Views.TextViewWithFont
+                android:id="@+id/btn_more_articles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/more"
+                android:textSize="@dimen/activity_main_Lists_title_size2"
+                android:textColor="@color/dark_gray"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_main_Lists_height">
+
+            <io.github.yuweiguocn.lib.squareloading.SquareLoading
+                android:id="@+id/article_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:squareColor="@color/colorPrimary"
+                app:squareSize="10dp"
+                app:squareCorner="2dp"
+                app:dividerSize="2dp"
+                app:xCount="3"
+                app:yCount="3" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/articles_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_main_Lists_height"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/question_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical">
+
+            <com.hope.commonsense.Views.TextViewWithFont
+                android:id="@+id/question_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/related_question"
+                android:textSize="@dimen/activity_main_Lists_title_size"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"/>
+
+            <com.hope.commonsense.Views.TextViewWithFont
+                android:id="@+id/btn_more_questions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/more"
+                android:textSize="@dimen/activity_main_Lists_title_size2"
+                android:textColor="@color/dark_gray"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_main_Lists_height">
+
+            <io.github.yuweiguocn.lib.squareloading.SquareLoading
+                android:id="@+id/question_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:squareColor="@color/colorPrimary"
+                app:squareSize="10dp"
+                app:squareCorner="2dp"
+                app:dividerSize="2dp"
+                app:xCount="3"
+                app:yCount="3" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/questions_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_main_Lists_height"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical">
+
+            <com.hope.commonsense.Views.TextViewWithFont
+                android:id="@+id/video_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/related_videos"
+                android:textSize="@dimen/activity_main_Lists_title_size"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"/>
+
+            <com.hope.commonsense.Views.TextViewWithFont
+                android:id="@+id/btn_more_videos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/more"
+                android:textSize="@dimen/activity_main_Lists_title_size2"
+                android:textColor="@color/dark_gray"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_main_Lists_height">
+
+            <io.github.yuweiguocn.lib.squareloading.SquareLoading
+                android:id="@+id/video_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:squareColor="@color/colorPrimary"
+                app:squareSize="10dp"
+                app:squareCorner="2dp"
+                app:dividerSize="2dp"
+                app:xCount="3"
+                app:yCount="3" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/videos_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_main_Lists_height"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- commensense: #4cb050-->
+    <!-- ravanshenasi: -->
+    <color name="colorPrimary">#f0b300</color>
+
+    <!-- commensense: #3e8c40-->
+    <!-- ravanshenasi:BF8E00 -->
+    <color name="colorPrimaryDark">#BF8E00</color>
+    <color name="colorAccent">#f0b300</color>
+
+    <color name="main_back">#fafafa</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#212121</color>
+    <color name="dark_gray">#7d848c</color>
+    <color name="dark_gray1">#626262</color>
+    <color name="dark_gray2">#9e9e9e</color>
+
+    <color name="navigation_divider">#eeeff3</color>
+    <!-- commensense: #a5d6a7-->
+    <!-- ravanshenasi:f0b300 -->
+    <color name="navigation_icon">#f0b300</color>
+
+    <color name="text_layout_success">#66D7B9</color>
+    <color name="text_layout_failure">#FF4B4A</color>
+    <color name="text_layout_description">#FFD91C</color>
+
+
+    <color name="ball1">#FFD91C</color>
+    <color name="ball2">#FF4B4A</color>
+    <color name="ball3">#3D8EFF</color>
+
+    <integer-array name="colors">
+        <item>@color/ball1</item>
+        <item>@color/ball2</item>
+        <item>@color/ball3</item>
+    </integer-array>
+
+
+</resources>

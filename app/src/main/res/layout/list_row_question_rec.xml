@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_main_Lists_height"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:gravity="center_horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_main_Lists_card_height"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="2dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/comments">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp">
+
+                    <com.hope.commonsense.Views.EllipsizingTextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_main_Lists_title_size2"
+                        android:ellipsize="end"
+                        android:maxLines="5"/>
+
+                    <com.hope.commonsense.Views.TextViewWithFont
+                        android:id="@+id/answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/dark_gray2"
+                        android:text="@string/see_answer"
+                        android:textSize="@dimen/activity_main_Lists_title_size3"
+                        style="@style/TextViewStyle"
+                        android:singleLine="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:gravity="center_vertical">
+
+                <com.hope.commonsense.Views.TextViewWithFont
+                    android:id="@+id/commentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/dark_gray2"
+                    android:text="@string/comment"
+                    android:textSize="@dimen/activity_main_Lists_title_size3"
+                    android:layout_marginRight="5dp"/>
+
+                <ImageView
+                    android:id="@+id/comment_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ico_comment"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
